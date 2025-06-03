@@ -53,7 +53,6 @@ body {
     font-size: 16px;
     font-weight: 600;
     line-height: 140%;
-    /* 22.4px */
 }
 
 /* Hero Section/Banner */
@@ -61,9 +60,8 @@ body {
     display: flex;
     padding: 80px 80px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
-    align-self: stretch;
     background: var(--Background, #2B2B2B);
 }
 
@@ -73,6 +71,7 @@ body {
     align-items: flex-start;
     gap: 30px;
     flex: 1 0 0;
+    height: 100%;
 }
 
 .banner h1 {
@@ -85,17 +84,14 @@ body {
     font-size: 67px;
     font-weight: 600;
     line-height: 110%;
-    /* 73.7px */
     text-transform: capitalize;
 }
 
 .banner .text {
-    align-self: stretch;
     color: var(--White, #FFF);
     font-size: 22px;
     font-weight: 400;
     line-height: 160%;
-    /* 35.2px */
     text-transform: capitalize;
 }
 
@@ -113,14 +109,12 @@ body {
     font-size: 16px;
     font-weight: 600;
     line-height: 140%;
-    /* 22.4px */
 }
 
 .count {
     display: flex;
     align-items: flex-start;
-    gap: 30px;
-    align-self: stretch;
+    gap: 70px;
 }
 
 .count h3 {
@@ -129,7 +123,6 @@ body {
     font-size: 28px;
     font-weight: 700;
     line-height: 140%;
-    /* 39.2px */
     text-transform: capitalize;
 }
 
@@ -138,29 +131,35 @@ body {
     font-size: 23.99px;
     font-weight: 400;
     line-height: 160%;
-    /* 38.384px */
     text-transform: capitalize;
 }
 
 .hero-nft {
     display: flex;
-    height: 510px;
     flex-direction: column;
     align-items: center;
-    flex: 1 0 0;
+    flex: 0 0 510px;
+    width: 510px;
+    height: 100%;
 }
 
 .hero-nft>img {
     border-radius: 20px 20px 0px 0px;
+    height: 450px;
+    display: block;
+    object-fit: cover;
 }
 
 .artist {
     display: flex;
-    padding: 20px;
     flex-direction: column;
     gap: 10px;
     border-radius: 0px 0px 20px 20px;
     background: var(--Background---Secondary, #3B3B3B);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 24px;
+    align-items: flex-start;
 }
 
 .artist h3 {
@@ -168,8 +167,13 @@ body {
     font-size: 22px;
     font-weight: 600;
     line-height: 140%;
-    /* 30.8px */
     text-transform: capitalize;
+}
+
+.artist>div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .artist img {
@@ -181,5 +185,4 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
-    /* 22.4px */
 }
