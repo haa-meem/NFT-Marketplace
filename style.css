@@ -198,7 +198,8 @@ body {
     background: var(--Background, #2B2B2B);
 }
 
-.trending h3 {
+.trending h3,
+.creators h3 {
     color: var(--White, #FFF);
     font-size: 38px;
     font-weight: 600;
@@ -206,7 +207,8 @@ body {
     text-transform: capitalize;
 }
 
-.trending .text {
+.trending .text,
+.creators .text {
     color: var(--White, #FFF);
     font-size: 22px;
     font-weight: 400;
@@ -237,7 +239,6 @@ body {
 
 .collection-main .main-img {
     width: 100%;
-    /* height: 100%; */
 }
 
 .collection-thumbs {
@@ -309,4 +310,109 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
+}
+
+/* Top Rated Artist */
+.creators {
+    display: flex;
+    padding: 80px 115px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background: var(--Background, #2B2B2B);
+}
+
+.creators .btn {
+    display: flex;
+    height: 60px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: 2px solid var(--Call-to-Action, #A259FF);
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    background: var(--Background, #2B2B2B);
+}
+
+.creators .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.creators-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background: #2B2B2B;
+    padding: 60px 0px;
+    justify-items: center;
+    width: 100%;
+}
+
+.creator-card {
+    background: #3B3B3B;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.creator-rank {
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    background: var(--Background, #2B2B2B);
+    border-radius: 50%;
+    color: var(--caption-label-text, #858584);
+    font-weight: 400;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 140%;
+    font-family: "Space Mono";
+    font-size: 16px;
+    z-index: 1;
+    text-align: center;
+}
+
+.creator-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.creator-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.creator-sales {
+    color: #858584;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.creator-sales span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-left: 3px;
 }
