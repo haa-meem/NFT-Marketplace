@@ -1,1 +1,1 @@
-🔗 **Live Demo**: [Krypto Website](https://haa-meem.github.io/NFT-Marketplace/)
+🔗 **Live Demo**: [NFT-Marketplace](https://haa-meem.github.io/NFT-Marketplace/)
