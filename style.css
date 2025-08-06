@@ -456,8 +456,14 @@ body {
     height: 240px;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
-    /* background: rgba(255, 255, 255, 0.10); */
-    backdrop-filter: blur(7.5px);
+    filter: blur(7.5px);
+}
+
+.image-overlay {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin: 70px;
 }
 
 .browse-title {
