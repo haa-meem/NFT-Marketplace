@@ -492,12 +492,11 @@ body {
 
 .more-nfts-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     gap: 30px;
     background: #2B2B2B;
     padding: 60px 0;
-    justify-items: center;
-    width: 100%;
+    justify-content: center;
 }
 
 .more-nfts-card {
@@ -509,7 +508,6 @@ body {
     align-items: center;
 }
 
-.nfts-img{
-height: 296px;
-align-self: stretch;
+.user-avatar {
+    border-radius: 20px;
 }
